@@ -1,0 +1,33 @@
+<div class="container mt-4">
+
+    <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12 ">
+            <div class="card" style="width: 700px;">
+                <div class="card-body">
+                    <form  #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)" >
+                    <h3 class="text-center default-text py-3"> Post a Job</h3>
+                    <!--Body-->
+                    <div class="md-form">
+                        <input type="text" value="title" required  name="title" id="defaultForm-email"  class="form-control" placeholder="Job Title"  ngModel required>
+                    </div>
+                    <div class="md-form">
+                        <input type="text" value="salary"  name="salary" id="defaultForm-pass"  class="form-control" placeholder="Job Salary" ngModel required>
+                    </div>
+                    <div class="md-form">
+                        <textarea type="text" value="description" name="description" id="defaultForm-pass"  class="form-control" placeholder="Job Description" ngModel required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button  class="btn btn-default waves-effect waves-light" [disabled]="!newCribForm.valid"  >Add</button>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+       
+        <!-- Grid column -->
+    </div>
+    </div>
+
+    <app-list-component></app-list-component>
