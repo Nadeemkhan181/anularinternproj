@@ -19,7 +19,7 @@ export class ListComponentComponent implements OnInit {
   ngOnInit() {
   
     this.data_service.newCribSubject.subscribe(
-      data => console.log(data)
+      data =>  this.cribs = [data, ...this.cribs]
       
     );
   }
