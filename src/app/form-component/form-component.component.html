@@ -6,7 +6,7 @@
             <div class="card" >
                 <div class="card-body">
                     <form  #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)" >
-                    <h3 class="text-center default-text py-3"> Post a Job</h3>
+                    <h2 class="text-center default-text py-3"> Post a Job</h2>
                     <!--Body-->
                     <div class="md-form">
                         <input type="text" value="title" required  name="title" id="defaultForm-email"  class="form-control" placeholder="Job Title"  ngModel required>
@@ -29,5 +29,5 @@
         <!-- Grid column -->
     </div>
     </div>
-
+<button routerLink="/list-component"></button>
     <app-list-component></app-list-component>

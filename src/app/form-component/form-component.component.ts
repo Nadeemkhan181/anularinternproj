@@ -28,10 +28,9 @@ ngOnInit(){
 
 
   onCribSubmit(data) {
-
-   
-   
-    this.data.addpost(data);
+  this.data.addpost(data);
+  this.newCribForm.resetForm();
+  
   }
 
 
