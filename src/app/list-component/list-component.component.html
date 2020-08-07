@@ -2,12 +2,12 @@
    
         <div class="box" *ngFor="let crib of cribs">
              <div class="box-col box-80">
-                <h4>{{ crib.title }}</h4>
+                <h4>Job : {{ crib.title }}</h4>
                 <br>
                 <br>
-                   <span class="function"><i class="fa fa-inr"></i>{{crib.salary }}</span>
+                   <span class="function">Salary:  <i class="fa fa-inr"></i>{{crib.salary }}</span>
                    <br>
-                        <p>{{ crib.description }}</p>
+                        <p> Job Details: {{ crib.description }}</p>
              </div>
       
       <div class="box-col box-20 text-right">
